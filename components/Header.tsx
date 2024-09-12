@@ -5,12 +5,13 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
 import { ModeToggle } from './mode-toggle'
+import MobileSideBar from './MobileSideBar'
 
 const Header = () => {
   return (
     <header className='flex justify-between items-center fixed w-full z-50 py-2 px-4 border-b border-primary/10 bg-secondary'>
-        <div className='flex items-center'>
-            <Menu className='block md:hidden'/>
+        <div className='flex items-center h-16'>
+            <MobileSideBar />
             <Link href={'/'}>
                 <h1 className='hidden md:block text-xl md:text-3xl font-bold text-primary'>
                     Showverse
